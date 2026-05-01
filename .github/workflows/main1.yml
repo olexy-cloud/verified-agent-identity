@@ -2,7 +2,7 @@ name: Verify Human Identity
 on:
   workflow_dispatch:
 
-jobs:
+jobs: farmer
   verify:
     runs-on: ubuntu-latest
     steps:
@@ -23,4 +23,4 @@ jobs:
       - name: Create Identity & Generate Link
         run: |
           node scripts/createNewEthereumIdentity.js
-          node scripts/manualLinkHumanToAgent.js --challenge '{"name": "darlington olex", "description": "On God"}'
+          node scripts/manualLinkHumanToAgent.js --challenge '{"name": "Olex darlington", "description": "Premium guy in Nigeria"}'
